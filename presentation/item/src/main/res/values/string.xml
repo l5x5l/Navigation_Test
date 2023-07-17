@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_list">ITEM LIST</string>
+    <string name="item_detail">ITEM DETAIL</string>
+    <string name="timer">TIMER</string>
+
+    <string name="move_to_item_detail">go to item detail</string>
+    <string name="move_to_timer">go to timer</string>
+</resources>

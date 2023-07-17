@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_home">LOGIN HOME</string>
+    <string name="step_1">SIGN UP\nSTEP 1</string>
+    <string name="step_2">SIGN UP\nSTEP 2</string>
+    <string name="complete">SIGN UP\nCOMPLETE</string>
+    <string name="login">Login</string>
+    <string name="next">next</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="post_list">POST LIST</string>
+    <string name="select_post_target">SELECT\nPOST TARGET</string>
+    <string name="write_post">WRITE POST</string>
+
+    <string name="move_to_select_target">go to select target</string>
+    <string name="complete_write">complete writing</string>
+
+    <string name="item_1">ITEM 1</string>
+    <string name="item_2">ITEM 2</string>
+</resources>
