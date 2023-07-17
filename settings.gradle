@@ -14,3 +14,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Navigation_test"
 include ':app'
+include ':presentation:login'
+include ':presentation:item'
+include ':presentation:post'
+include ':presentation:camera'
+include ':presentation:mypage'
+include ':presentation:intro'
+include ':presentation:splash'
