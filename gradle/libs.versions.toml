@@ -15,6 +15,7 @@ espresso = { module = "androidx.test.espresso:espresso-core", version = "3.5.1" 
 # navigation
 navigationFragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
 navigationUi = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+navigationFeature = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "navigation" }
 
 # coroutines
 coroutine = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.6.4" }

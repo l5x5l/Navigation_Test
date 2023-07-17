@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login"
+    app:startDestination="@id/loginHomeFragment">
+
+    <fragment
+        android:id="@+id/loginHomeFragment"
+        android:name="com.strayalpaca.login.LoginHomeFragment"
+        android:label="LoginHomeFragment" />
+    <fragment
+        android:id="@+id/signUpStep1Fragment"
+        android:name="com.strayalpaca.login.SignUpStep1Fragment"
+        android:label="SignUpStep1Fragment" />
+    <fragment
+        android:id="@+id/signUpStep2Fragment"
+        android:name="com.strayalpaca.login.SignUpStep2Fragment"
+        android:label="SignUpStep2Fragment" />
+    <fragment
+        android:id="@+id/signUpCompleteFragment"
+        android:name="com.strayalpaca.login.SignUpCompleteFragment"
+        android:label="SignUpCompleteFragment" />
+</navigation>

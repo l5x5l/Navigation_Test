@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/write_post"
+    app:startDestination="@id/selectPostListFragment">
+
+    <fragment
+        android:id="@+id/selectPostListFragment"
+        android:name="com.strayalpaca.post.SelectPostListFragment"
+        android:label="SelectPostListFragment" />
+    <fragment
+        android:id="@+id/writePostFragment"
+        android:name="com.strayalpaca.post.WritePostFragment"
+        android:label="WritePostFragment" />
+</navigation>

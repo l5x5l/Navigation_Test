@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.strayalpaca.splash.StartFragment"
+        android:label="StartFragment" />
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.strayalpaca.intro.IntroFragment"
+        android:label="IntroFragment" />
+    <include app:graph="@navigation/login" />
+    <include app:graph="@navigation/home_navigation" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.strayalpaca.mypage.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <include app:graph="@navigation/camera" />
+    <include app:graph="@navigation/item_detail" />
+    <include app:graph="@navigation/write_post" />
+</navigation>
