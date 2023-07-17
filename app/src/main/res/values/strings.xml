@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Navigation_test</string>
+
+    <string name="item">ITEM</string>
+    <string name="post">POST</string>
+    <string name="mypage">MY PAGE</string>
 </resources>

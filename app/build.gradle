@@ -30,6 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -41,6 +44,7 @@ dependencies {
     implementation project(":presentation:mypage")
     implementation project(":presentation:post")
     implementation project(":presentation:splash")
+    implementation project(":core:presentation")
 
     implementation libs.bundles.androidCore
     implementation libs.material
