@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.strayalpaca.camera'
+    namespace 'com.strayalpaca.presentation'
     compileSdk 33
 
     defaultConfig {
@@ -34,8 +34,6 @@ android {
 }
 
 dependencies {
-
-    implementation project(":core:presentation")
 
     implementation libs.bundles.androidCore
     implementation libs.material

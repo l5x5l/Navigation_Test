@@ -28,9 +28,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
+
+    implementation project(":core:presentation")
 
     implementation libs.bundles.androidCore
     implementation libs.material
