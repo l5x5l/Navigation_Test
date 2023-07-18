@@ -4,20 +4,46 @@
     android:id="@+id/login"
     app:startDestination="@id/loginHomeFragment">
 
+    <deepLink
+        app:uri="@string/deep_link_login"/>
+
     <fragment
         android:id="@+id/loginHomeFragment"
         android:name="com.strayalpaca.login.LoginHomeFragment"
-        android:label="LoginHomeFragment" />
+        android:label="LoginHomeFragment" >
+        <action
+            android:id="@+id/action_loginHomeFragment_to_signUpStep1Fragment"
+            app:destination="@id/signUpStep1Fragment" />
+        <argument
+            android:name="login_success"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
     <fragment
         android:id="@+id/signUpStep1Fragment"
         android:name="com.strayalpaca.login.SignUpStep1Fragment"
-        android:label="SignUpStep1Fragment" />
+        android:label="SignUpStep1Fragment" >
+        <action
+            android:id="@+id/action_signUpStep1Fragment_to_signUpStep2Fragment"
+            app:destination="@id/signUpStep2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpStep2Fragment"
         android:name="com.strayalpaca.login.SignUpStep2Fragment"
-        android:label="SignUpStep2Fragment" />
+        android:label="SignUpStep2Fragment" >
+        <action
+            android:id="@+id/action_signUpStep2Fragment_to_signUpCompleteFragment"
+            app:destination="@id/signUpCompleteFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpCompleteFragment"
         android:name="com.strayalpaca.login.SignUpCompleteFragment"
-        android:label="SignUpCompleteFragment" />
+        android:label="SignUpCompleteFragment" >
+        <action
+            android:id="@+id/action_signUpCompleteFragment_to_loginHomeFragment"
+            app:destination="@id/loginHomeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loginHomeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
 </navigation>
