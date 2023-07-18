@@ -38,6 +38,7 @@ dependencies {
 
     implementation libs.bundles.androidCore
     implementation libs.material
+    implementation libs.bundles.navigation
 
     testImplementation libs.junit
     androidTestImplementation libs.extJunit
