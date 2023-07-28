@@ -7,6 +7,7 @@ import androidx.navigation.NavDeepLinkRequest
 import androidx.navigation.NavOptions
 import com.strayalpaca.mypage.databinding.MypageScreenBinding
 import com.strayalpaca.presentation.ViewBindingFragment
+import com.strayalpaca.presentation.util.ErrorDetector
 import com.strayalpaca.presentation.util.getParentNavController
 
 class MypageFragment : ViewBindingFragment<MypageScreenBinding>(MypageScreenBinding::bind, R.layout.mypage_screen) {
@@ -33,6 +34,10 @@ class MypageFragment : ViewBindingFragment<MypageScreenBinding>(MypageScreenBind
                 getParentNavController()?.navigate(request, navOptions)
             }
 
+        }
+
+        binding.btnTokenError.setOnClickListener {
+            ErrorDetector.setTokenExpired()
         }
     }
 }
