@@ -5,6 +5,7 @@
     <string name="deep_link_camera">android-app://navigation.test/camera</string>
     <string name="deep_link_login">android-app://navigation.test/login</string>
     <string name="deep_link_item_detail">android-app://navigation.test/item_detail</string>
+    <string name="deep_link_item_detail_with_args">android-app://navigation.test/item_detail?item={item}</string>
     <string name="deep_link_write_post">android-app://navigation.test/write_post</string>
     <string name="deep_link_edit_profile">android-app://navigation.test/edit_profile</string>
 </resources>

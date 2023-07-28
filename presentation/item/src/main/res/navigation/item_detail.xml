@@ -10,10 +10,14 @@
         android:label="ItemDetailFragment">
 
         <deepLink
-            app:uri="@string/deep_link_item_detail"/>
+            app:uri="@string/deep_link_item_detail_with_args"/>
         <action
             android:id="@+id/action_itemDetailFragment_to_timerFragment"
             app:destination="@id/timerFragment" />
+        <argument
+            android:name="item"
+            app:argType="string"
+            android:defaultValue="default" />
     </fragment>
     <fragment
         android:id="@+id/timerFragment"
