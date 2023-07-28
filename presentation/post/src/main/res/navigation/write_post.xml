@@ -4,6 +4,9 @@
     android:id="@+id/write_post"
     app:startDestination="@id/selectPostListFragment">
 
+    <deepLink
+        app:uri="@string/deep_link_write_post"/>
+
     <fragment
         android:id="@+id/selectPostListFragment"
         android:name="com.strayalpaca.post.SelectPostListFragment"

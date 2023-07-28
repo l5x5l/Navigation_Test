@@ -4,6 +4,9 @@
     android:id="@+id/camera"
     app:startDestination="@id/cameraFragment">
 
+    <deepLink
+        app:uri="@string/deep_link_camera"/>
+
     <fragment
         android:id="@+id/cameraFragment"
         android:name="com.strayalpaca.camera.CameraFragment"
